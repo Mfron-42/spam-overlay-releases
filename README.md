@@ -30,8 +30,12 @@ ships or installs Npcap.
 ## Privacy
 
 - **It only reads.** It never clicks, types, injects code, reads the game's memory or changes a file of the game.
-- **It sends nothing.** No account, no telemetry, no analytics. What it reads stays on your PC. The only thing that can go
-  online is "Check for updates", and only when you press it; it downloads and runs nothing by itself.
+- **What goes online, and nothing else.**
+  - Updates: at each start, and when you press "Check for updates", it reads the latest version from spam-meta.com. An
+    installed copy then downloads it, checks it and installs it, never during a match.
+  - Game data: after each match, and when you report an advice, it sends an anonymous record of the game (no name, no account,
+    no file path) to reports.spam-meta.com.
+  - "Install Npcap for me" downloads Npcap's installer from npcap.com when you press it.
 - **Your files.** Settings, logs and the engine prepared from your game stay in the overlay's own `data` folder. The overlay
   writes nothing to the registry.
 
@@ -84,9 +88,12 @@ L'overlay ne fournit ni n'installe jamais Npcap.
 
 - **Il ne fait que lire.** Il ne clique jamais, ne tape rien, n'injecte rien, ne lit pas la mémoire du jeu et ne modifie aucun
   fichier du jeu.
-- **Il n'envoie rien.** Pas de compte, pas de télémétrie, pas de statistiques. Ce qu'il lit reste sur votre PC. Seul
-  « Rechercher une mise à jour » peut aller en ligne, et seulement quand vous appuyez dessus ; il ne télécharge et ne lance rien
-  de lui-même.
+- **Ce qui part en ligne, et rien d'autre.**
+  - Mises à jour : à chaque démarrage, et quand vous appuyez sur « Rechercher une mise à jour », il lit la dernière version sur
+    spam-meta.com. Une copie installée la télécharge, la vérifie et l'installe, jamais pendant une partie.
+  - Données de jeu : après chaque partie, et quand vous signalez un conseil, il envoie un relevé anonyme de la partie (sans nom,
+    sans compte, sans chemin de fichier) à reports.spam-meta.com.
+  - « Installer Npcap pour moi » télécharge l'installateur de Npcap depuis npcap.com quand vous appuyez dessus.
 - **Vos fichiers.** Réglages, journaux et moteur préparé à partir de votre jeu restent dans le dossier `data` de l'overlay.
   L'overlay n'écrit rien dans le registre.
 
